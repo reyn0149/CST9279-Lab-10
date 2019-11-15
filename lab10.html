@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+<h2>&#160;</h2>
+<div>
+  <h2 align="center">CST 8279&#160;<br/>
+  Lab 10</h2>
+  <p align="center">version 1.0</p>
+  <p>&#160;</p>
+  <p>It is recommended that you read the entire lab before you start working.</p>
+  <p><strong>What you will do:</strong></p>
+  <ol>
+    <li>Use Python to access SQLite3 database, read and write data.</li>
+    <li>Use Python to open a web browser.</li>
+    <li>Use  Python libraries to perform various tasks.</li>
+  </ol>
+  <h3>Task 1:</h3>
+  <ul>
+    <li>Download and install SQLite broswer for your laptop operating system. <em>DB Browser for SQLite</em>&#160;(DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite. you can download it from <a rel="noopener" href="https://sqlitebrowser.org/dl/">https://sqlitebrowser.org/dl/</a></li>
+    <li>Download the SQLite3 database week10.db then use <em>DB Browser for SQLite</em>&#160;to open and get familiar with the database. The field Link in the db is a base64 encoded value of a URL.</li>
+  </ul>
+  <h3>Task 2:</h3>
+  <ul>
+    <li>Write a python program that:
+      <ul>
+        <li>asks the user for a record number between 1 and 24, other values must be ignored and the user prompted again. Character q  quits the program.</li>
+        <li>writes and executes a SQLite3 query to extract the Link field associated with the record. (research and use the sqlite3 module)</li>
+        <li>decodes the base64 encoded value of the URL. (research and use the base64 module)</li>
+        <li>opens a web browser with the decoded URL. (research and use the webbrowser module)</li>
+        <li>for that specific record, asks the user for name of the city and the country and updates the record.  (research and use the sqlite3 module)</li>
+        <li>Bonus: try to find out who in the class lives in that city and update the associated student field.</li>
+      </ul>
+    </li>
+  </ul>
+  <h3>Task 3: Submit your lab</h3>
+  <ul>
+<li>Upload the files to Github and make me a colaborator. Upload the Github link to Brightspace.  </li>
+  </ul>
+  <h3>Marking Scheme</h3>
+  <table width="100%" border="1" cellspacing="2" cellpadding="2">
+    <tbody>
+      <tr>
+        <td colspan="2"><table width="100%" border="1" cellspacing="2" cellpadding="2">
+          <tbody>
+            <tr>
+              <td colspan="2"><p><strong>Rubric</strong><br/>
+                This lab has a maximum mark of 10, awarded according to the following rubric.</p></td>
+            </tr>
+            <tr>
+              <td><strong>Criteria</strong></td>
+              <td><strong>Mark</strong></td>
+            </tr>
+            <tr>
+              <td>Superior capability. Lab submitted meets or exceeds expected standards</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Satisfactory capability, acceptable product/result</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>Marginal capability, substandard product/result</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>No capability, unacceptable product/result. Work not submitted</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+          <p>&#160;</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Note that 40% of your final grade comes from the grades you obtained from your labs and assignments.</p>
+
+</div>
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=20.19.10.18565-31 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'); });</script></body></html>
