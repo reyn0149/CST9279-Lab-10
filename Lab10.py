@@ -15,5 +15,12 @@ while userInput < 1 or userInput > 24:
     #Opens the web browser to the google maps address selected
     if userInput >= 1 and userInput <= 24:
         userTuple = (userInput, )
-        cursor.execute('SELECT link FROM  Lab10 WHERE id=?', userTuple)
+        cursor.execute('SELECT link FROM Lab10 WHERE id=?', userTuple)
         webbrowser.open(base64.b64decode(cursor.fetchone()))
+        #Asks the user for the name of the city and country, then commits it to the database
+        cityName = input("What's the name of the city selected? ")
+        countryName = input("Which country is the city in? ")
+        insertedData = (cityName, countryName, userInput)
+        cursor.execute('UPDATE Lab10 SET (City,Country) = (?,?) WHERE id=?', insertedData)
+        connect.commit()
+        connect.close()
